@@ -17,7 +17,7 @@
                 <object type="image/svg+xml" data="img/svg/home.svg" width="24" height="24">burger</object>
             </li>
             <li>
-                <input type="text" placeholder="Поиск">
+                <input type="text" class="header-panel__input" placeholder="Поиск">
             </li>
         </ul>
 
@@ -41,29 +41,31 @@
     <main>
         <section class="login">
             <h1>Войти</h1>
-    
-            <form action="#" class="login-form">
-                <a class="login-form__link_api"> Войти через Google</a>
-                <a class="login-form__link_api"> Войти через VK</a>
+                <div class="login-link">
+                    <a class="login-link__a"> Войти через Google</a>
+                    <a class="login-link__a"> Войти через VK</a>
+                </div>
+            
+                <form action="#" class="login-form">
 
                 <label for="email" class="login-form__label">
                     Email
-                    <input id="email" type="text" class="login-form__input">
+                    <input id="email" type="text" class="login-form__input" placeholder="Enter email">
                 </label>
                 
                 
                 <label for="password" class="login-form__label">
                     Пароль
-                    <input id="password" type="password" class="login-form__input">
+                    <input id="password" type="password" class="login-form__input" placeholder="Enter password">
                 </label>
                 
-                <a href="#">Забыли пароль?</a>
+                <a href="#" class="login-form__a">Забыли пароль?</a>
 
-                <button login-form__button>Вход</button>
+                <button class="login-form__button">Войти</button>
             </form>
-            <p>Используя для входа Google, Apple или Email-адрес, вы соглашаетесь с <a>Условиями использования</a> и <a>Политикой конфиденциальности.</a></p>
+            <p>Используя для входа Google, Apple или Email-адрес, вы соглашаетесь с <a href="#">Условиями использования</a> и <a href="#">Политикой конфиденциальности.</a></p>
         </section>
-        <p>Еще нет аккаунта? <a href="#">Зарегестрироваться</a></p>
+        <p>Еще нет аккаунта? <a href="#" class="registration-link">Зарегестрироваться</a></p>
     </main>
 </body>
 </html>
