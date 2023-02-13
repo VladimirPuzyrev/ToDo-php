@@ -49,7 +49,7 @@ main{
 .login{
     display: flex;
     flex-direction: column;
-
+    font-size: 14px;
     margin-top: 15vh;
     margin-bottom: 18px;
     padding: 24px;
@@ -57,6 +57,7 @@ main{
     width: 25vw;
     height: auto;
     background-color: rgba(242, 245, 255, 1);
+    border-radius: 8px;
 }
 
 .login p a{
@@ -74,6 +75,7 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     border: 1px solid #94A4B6;
     border-radius: 8px;
     padding: 12px;
