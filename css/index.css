@@ -1,7 +1,8 @@
 * {
     padding: 0;
     margin: 0;
-    border: none;  
+    border: none;
+    font-family: 'Roboto', sans-serif;  
 }
 
 ul{
@@ -30,34 +31,36 @@ main{
     align-items: center;
 }
 
-.header-panel{
+.nav-panel{
     margin: 0 24px;
 }
 
-.header-panel li{
+.nav-panel li{
     padding: 0;
     display: inline;
     margin: auto 8px;
     vertical-align: middle;
 }
 
-.header-panel__input{
+.nav-panel__input{
     padding: 4px;
 }
 
 .login{
     display: flex;
     flex-direction: column;
+
     margin-top: 15vh;
     margin-bottom: 18px;
     padding: 24px;
     gap: 24px;
-    width: 30vw;
+    width: 25vw;
     height: auto;
     background-color: rgba(242, 245, 255, 1);
 }
 
 .login p a{
+    
     text-decoration: underline;
 }
 .login-link{

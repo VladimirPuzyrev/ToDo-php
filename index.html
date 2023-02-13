@@ -5,28 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>ToDo</title>
 </head>
 <body>
     <header>
-        <ul class="header-panel">
+        <ul class="nav-panel">
             <li>
-                <object type="image/svg+xml" data="img/svg/burger.svg" width="24" height="24">burger</object>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 20C0.447716 20 0 19.5523 0 19C0 18.4477 0.447715 18 1 18H23C23.5523 18 24 18.4477 24 19C24 19.5523 23.5523 20 23 20H1ZM1 13C0.447716 13 0 12.5523 0 12C0 11.4477 0.447715 11 1 11H23C23.5523 11 24 11.4477 24 12C24 12.5523 23.5523 13 23 13H1ZM1 6C0.447716 6 0 5.55228 0 5C0 4.44772 0.447715 4 1 4H23C23.5523 4 24 4.44772 24 5C24 5.55228 23.5523 6 23 6H1Z" fill="#94A4B6"/>
+                </svg>
             </li>
             <li>
-                <object type="image/svg+xml" data="img/svg/home.svg" width="24" height="24">burger</object>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.1999 21.0002H8.6999V13.5002H15.2999V21.0002H19.7999V9.3002L11.9999 3.4502L4.1999 9.3002V21.0002ZM2.3999 22.8002V8.4002L11.9999 1.2002L21.5999 8.4002V22.8002H13.4999V15.3002H10.4999V22.8002H2.3999Z" fill="#94A4B6"/>
+                </svg>
+                    
             </li>
             <li>
-                <input type="text" class="header-panel__input" placeholder="Поиск">
+                <input type="text" class="nav-panel__input" placeholder="Поиск">
             </li>
         </ul>
 
-        <ul class="header-panel">
+        <ul class="nav-panel">
             <li>
-                <object type="image/svg+xml" data="img/svg/plus.svg" width="24" height="24">burger</object>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 22C11.4083 22 10.9286 21.5203 10.9286 20.9286V13.0714H3.07143C2.4797 13.0714 2 12.5917 2 12V12C2 11.4083 2.47969 10.9286 3.07143 10.9286H10.9286V3.07143C10.9286 2.4797 11.4083 2 12 2V2C12.5917 2 13.0714 2.47969 13.0714 3.07143V10.9286H20.9286C21.5203 10.9286 22 11.4083 22 12V12C22 12.5917 21.5203 13.0714 20.9286 13.0714H13.0714V20.9286C13.0714 21.5203 12.5917 22 12 22V22Z" fill="#94A4B6"/>
+                </svg>                    
             </li>
             <li>
-                <object type="image/svg+xml" data="img/svg/notifications.svg" width="24" height="24">burger</object>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.3999 20.4V18.6H4.9199V9.42C4.9199 7.74 5.4149 6.245 6.4049 4.935C7.3949 3.625 8.6999 2.8 10.3199 2.46V1.59C10.3199 1.13 10.4849 0.75 10.8149 0.45C11.1449 0.15 11.5399 0 11.9999 0C12.4599 0 12.8549 0.15 13.1849 0.45C13.5149 0.75 13.6799 1.13 13.6799 1.59V2.46C15.2999 2.8 16.6099 3.625 17.6099 4.935C18.6099 6.245 19.1099 7.74 19.1099 9.42V18.6H21.5999V20.4H2.3999ZM11.9999 24C11.3599 24 10.7999 23.765 10.3199 23.295C9.8399 22.825 9.5999 22.26 9.5999 21.6H14.3999C14.3999 22.26 14.1649 22.825 13.6949 23.295C13.2249 23.765 12.6599 24 11.9999 24ZM6.7199 18.6H17.3099V9.42C17.3099 7.94 16.7999 6.68 15.7799 5.64C14.7599 4.6 13.5099 4.08 12.0299 4.08C10.5499 4.08 9.2949 4.6 8.2649 5.64C7.2349 6.68 6.7199 7.94 6.7199 9.42V18.6Z" fill="#94A4B6"/>
+                    </svg>
+
             </li>
             <li>
                 <picture>
@@ -42,7 +55,17 @@
         <section class="login">
             <h1>Войти</h1>
                 <div class="login-link">
-                    <a class="login-link__a"> Войти через Google</a>
+                    <a class="login-link__a"> 
+                        <picture>
+                            <img
+                                src="img/Google.jpg"
+                                alt="Google"
+                                width="24"
+                                height="24" 
+                            >
+                        </picture>
+                        Войти через Google
+                    </a>
                     <a class="login-link__a"> Войти через VK</a>
                 </div>
             
