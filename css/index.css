@@ -95,6 +95,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    
     border: 1px solid #94A4B6;
     border-radius: 8px;
     padding: 16px 32px;
